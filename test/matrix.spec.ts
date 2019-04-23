@@ -39,3 +39,10 @@ test("matrix:basic method", () => {
   m.multiThenAdd(1, -1, 2);
   expect(m.getRow(2)).toEqual([-3, -3, -3]);
 });
+
+test("matrix:ref", () => {
+  const m = getMatrix();
+
+  m.ref();
+  console.log(m);
+});

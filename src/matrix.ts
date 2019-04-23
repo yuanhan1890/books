@@ -12,6 +12,32 @@ export class Matrix {
   ) {
   }
 
+  public ref() {
+    // echelon form
+    let povitRow = 0;
+    for (let c = 0; c < this.columns; c += 1) {
+      for (let r = povitRow; r < this.rows; r += 1) {
+        let col = this.getCol(c);
+        const maxNumInColumn = Math.max(...col.map((i) => Math.abs(i)));
+
+        if (maxNumInColumn === 0) {
+          break;
+        }
+        if (maxNumInColumn !== 0) {
+          this.swapRows(maxNumInColumn, 0);
+        }
+        col = this.getCol(c);
+        for (let i = povitRow + 1; i < this.rows; i += 1) {
+          this.multiThenAdd(r, - col[povitRow] / col[i], i);
+        }
+
+        povitRow += 1;
+      }
+    }
+
+    // backward substitution
+  }
+
   public swapRows(i: number, j: number) {
     let temp: number;
     const baseI: number = this.columns * i;
