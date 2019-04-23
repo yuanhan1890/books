@@ -13,7 +13,7 @@ export class Matrix {
   }
 
   public toString() {
-    const data: string[] = this.data.map((num) => `${num}`);
+    const data: string[] = this.data.map((num) => `${num % 1 === 0 ? num : num.toFixed(2)}`);
     const maxLen = Math.max(...data.map((s) => s.length)) + 2;
     const placeholder = Array.from({ length: maxLen }).join(" ");
 
