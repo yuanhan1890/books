@@ -12,7 +12,7 @@ test("matrix:toString", () => {
   const m = getMatrix();
 
   const str = m.toString().split("\n").map((line) => line.trim());
-  expect(str[0]).toBe("1, 2, 3");
+  expect(str[0]).toBe("1  2  3");
 
   const m0 = Matrix.fromString(`
   1,2,999,
@@ -21,8 +21,8 @@ test("matrix:toString", () => {
   `, 3, 3);
 
   const str0 = m0.toString().split("\n").map((line) => line.trim());
-  expect(str0[0]).toBe("1,   2, 999");
-  expect(str0[1]).toBe("4,   5,   6");
+  expect(str0[0]).toBe("1    2  999");
+  expect(str0[1]).toBe("4    5    6");
 });
 
 test("matrix:basic method", () => {
@@ -41,8 +41,20 @@ test("matrix:basic method", () => {
 });
 
 test("matrix:ref", () => {
-  const m = getMatrix();
+  const m = Matrix.fromString(`
+  1,2,3,
+  2,4,6,
+  3,6,9
+  `, 3, 3);
 
   m.ref();
-  console.log(m);
+  expect(m.data).toEqual([1, 2, 3, 0, 0, 0, 0, 0, 0]);
+
+  const m0 = Matrix.fromString(`
+  2, 4, -4,
+  5, 7, 11
+  `, 2, 3);
+
+  m0.ref();
+  expect(m0.getData()).toEqual([1, 0, 12, 0, 1, -7]);
 });
