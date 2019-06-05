@@ -1,16 +1,16 @@
-[theorem 1.5](#t1_5)
+[theorem 1.5](#t_1_5)
 
 $i) P \Rightarrow P \lor Q$
 
 $ii) P \land Q \Rightarrow P$
 
-[theorem 1.6](#t1_6)
+[theorem 1.6](#t_1_6)
 
 For all sentences $P$, $Q$ and $R$, the following is true:
 
 $\lbrack\lparen P\Rightarrow Q \rparen \land \lparen Q \Rightarrow R \rparen \rbrack \Rightarrow \lparen P \Rightarrow R \rparen$
 
-[theorem 1.7](#t1_7)
+[theorem 1.7](#t_1_7)
 
 For all sentences $P$, $Q$ and $R$, if $Q \Rightarrow R$, then
 
@@ -18,7 +18,7 @@ $i) P \lor Q \Rightarrow P \lor Q$
 
 $ii) P \land Q \Rightarrow P \land Q$
 
-[theorem 1.8](#t1_8)
+[theorem 1.8](#t_1_8)
 
 For all sentences $P$, $Q$ and $R$, the following are true:
 
@@ -42,7 +42,7 @@ $iv)' P \land P \Leftrightarrow P$
 
 ### 1.1.1
 
-prove [theorem 1.8](#t1_8)
+prove [theorem 1.8](#t_1_8)
 
 如果用table来计算表达式真值，继而证明定理，就太无聊了
 
