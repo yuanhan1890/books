@@ -66,6 +66,54 @@ $ii) \forall A \lparen A \subseteq u \rparen$
 
 ### 1.2.1
 
+a. x属于A，可以得出x属于$B \cup D$;x属于C，得出同样的结论，于是
+$A \cup C \subseteq B \cup D$
 
+b. 同理，集合之间运算对应逻辑运算
 
+### 1.2.2
 
+利用$A = B\;iff\;A \subseteq B \land B \subseteq A$
+
+### 1.2.3
+
+RA
+
+### 1.2.4
+
+$A = B \Rightarrow A' = B'$
+
+由以下推出
+
+$A \subseteq B \Rightarrow B' \subseteq A'$
+
+$B \subseteq A \Rightarrow A' \subseteq B'$
+
+### 1.2.5
+
+$A = B \land B \subseteq C \Rightarrow A \subseteq C$
+
+$x \in A \Rightarrow x \in B \Rightarrow x\in C$
+
+### 1.2.6
+
+同1.2.5
+
+### 1.2.7
+
+已证
+
+### 1.2.8
+
+$S: \{ x: x \notin x \}$
+
+如果S是元素，则$S \notin S$，悖论，所以S不能元素，是proper class
+
+### 1.2.9
+
+假设存在S是class，包含所有class，如果S不是元素，那么S不在S中，悖论；
+如果S是元素，则存在一个class包含S，悖论。axiom 2前提是x是元素，不能构造一个包含class的class
+
+### 1.2.10
+
+proper class避免罗素悖论，$rational language$构造的$P(x)$避免Berry悖论
