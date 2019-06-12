@@ -66,6 +66,55 @@ $ii) \forall A \lparen A \subseteq u \rparen$
 
 ### 1.2.1
 
+简单的逻辑$\land\;\lor$
 
+### 1.2.2
 
+使用1.2.1结论，利用$A = B\;iff\;A \subseteq B \land B \subseteq A$
 
+### 1.2.3
+
+使用RA
+
+### 1.2.4
+
+使用1.2.3的结论；
+
+### 1.2.5
+
+使用$\land$
+
+### 1.2.6
+
+同1.2.5
+
+### 1.2.7
+
+已证
+
+### 1.2.8
+
+$$
+\def\arraystretch{1.5}
+  \begin{array}{c:c:c:c}
+  1 & (1) & S = \{ x : x \notin x \} & A \\
+  \hdashline
+  2 & (2) & S\;is\;element & A \\
+  2 & (3) & S \in S \lor S \notin S & by\;definition \\
+  4 & (4) & S \in S & A \\
+  1,4 & (5) & S \notin S & by\;definition \\
+  1,4 & (6) & S \in S \land S \notin S & vI\;4,5 \\
+  7 & (7) & S \notin S & A \\
+  1,7 & (8) & S \in S \land S \notin S & by\;definition \\
+  1,2 & (9) & S \in S \land S \notin S & vE\;3,4,6,7,8 \\
+  1 & (10) & S\;is\;not\;element & RA\;2,9 \\
+\end{array}
+$$
+
+### 1.2.9
+
+不会，因为proper class根据定义不能作为element
+
+### 1.2.10
+
+罗素悖论通过proper class来避免，Berry悖论通过regular language来避免
