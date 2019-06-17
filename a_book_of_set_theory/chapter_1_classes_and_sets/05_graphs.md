@@ -340,4 +340,32 @@ c)
 
 $x \in dom_G - dom_H$
 
-$x \in dom_G$
+$\exists z, (x, z) \in G \land (x, z) \notin H$
+
+### 1.5.10
+
+a)
+
+$(x, y) \in G_{[B]}$
+
+$(x, y) \in G \land x \in B$
+
+$y \in ran_G \land x \in B$
+
+$(x, y) \in G \land (x, y) \in B \times ran_G$
+
+b)
+
+$(x, y) \in G_{B \cup C}$
+
+$(x, y) \in G \land x \in B \cup C$
+
+接下来使用vE
+
+c)
+
+同b
+
+d)
+
+使用MPP
