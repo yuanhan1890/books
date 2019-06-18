@@ -80,3 +80,92 @@ $A + B = (A - B) \cup (B - A)$，同上，两个都是A或者B的子集
 
 ### 1.7.3
 
+证过很多遍了
+
+### 1.7.4
+
+只需证明${\bigcap\atop{i\in I}}A_i$是之前集合的子集便可
+
+### 1.7.5
+
+$\bigcup_{\bigcup_G}$
+
+不规范证明, 假设$G \subseteq dom_G \times range_G$
+
+$\bigcup_G$是原$dom_G$的singleton，加上一个$\{\{x, y\}: x \in dom_G \land y \in range_G \}$的子集，这两个集合的并集
+
+对于上面特殊的子集，对于任意x，都可以找到一个y，使$\{x, y\}$属于这个集合
+
+$\bigcup_{\bigcup_G}$则是$dom_G$和$range_G$的并集
+
+所以$dom_G$和$range_G$都是集合
+
+### 1.7.6
+
+如果G是$A \times B$的子集，那么$G^{-1}$是$B \times A$的子集
+
+$G \circ H$则是$dom_H \times ran_G$的子集
+
+### 1.7.7
+
+$\rho(r) = \{\empty, \{a\}, \{b\}, \{a, b\}\}$
+
+### 1.7.8
+
+a)
+
+$A \subseteq B$
+
+$x \in A \Rightarrow x \in B$
+
+$x \in \rho(A) \Rightarrow x \subseteq A$
+
+$x \subseteq B \Rightarrow x \in \rho(B)$
+
+b)
+
+同上，证明$A \subseteq B$和$B \subseteq A$的情况
+
+c)
+
+$x \in \rho(A) \land x \in \rho(B)$
+
+$x \subseteq A \land x \in \subseteq B$
+
+$对于任意元素a属于x，则必定属于A \cap B$
+
+$x \subseteq A \cap B$
+
+d)
+
+c)使用&I, d)使用vE
+
+### 1.7.9
+
+a)
+
+$x \in {\bigcup}(\rho(\Lambda))$
+
+$x = x_1, x1 \subseteq \Lambda$
+
+$x \in \Lambda$
+
+$x \in x1, x1 \subseteq \Lambda$
+
+$x \in {\bigcup}(\rho(\Lambda))$
+
+b)
+
+$\empty \in \rho(\Lambda)$
+
+c)
+
+同a)
+
+### 1.7.10
+
+$\rho(\empty) = \{ \empty\}$
+
+$\rho(\rho(\empty)) = \{\empty, \{\empty\}\}$
+
+$\rho(\rho(\rho(\empty))) = \{\empty, \{\empty\}, \{\{\empty\}\}, \{\empty, \{\empty\}\}\}$
