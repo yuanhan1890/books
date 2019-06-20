@@ -201,3 +201,42 @@ iii)
 结合前两者易证
 
 ### exercise
+
+### 2.3.1
+
+$I_B(f(x)) = I_B(y) = y = f(x)$
+
+$f(I_A(x)) = f(x)$
+
+### 2.3.2
+
+a).
+
+如果$f$不是$injective$
+
+存在$f(x_1) = f(x_2) \land x_1 \not= x_2$
+
+由g的函数性质，$g(f(x_1)) = g(f(x_2)) \land x_1 \not= x_2$
+
+$g\circ f$不是$injective$
+
+由$(\lnot P\Rightarrow \lnot Q) \Leftrightarrow Q \Rightarrow P$得证
+
+$g\circ f\ is\ injective \Rightarrow f\ is\ injective$
+
+
+b).
+
+g如果不是满射
+
+$\forall y \in B, \exists x \in A, (x, y) \in g\circ f$
+
+$\forall y\in B, \exists x\in A, \exists z\in B, (x, z)\in f, (z, y)\in g$
+
+$\forall y\in B, \exists z\in B, (z, y)\in g$
+
+得证g是满射
+
+c)
+
+结合a、b得证
