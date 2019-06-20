@@ -252,3 +252,197 @@ $(x, y) \in f_{[B]} \cup f_{[C]}$
 所以$f \subseteq f_{[B]} \cup f_{[C]}$
 
 ### 2.2.7
+
+$f_1: A\rightarrow B, f_2: C\rightarrow D$
+
+$f: A\cup C\rightarrow B\cup D$
+
+证明injective
+
+假设存在$(x_1, y_1)\in f, (x_1, y_2)\in f$不相等
+
+如果$y_1 \in B \land y_2 \in D$
+
+$(x_1, y_1) \in f_1 \land (x_1, y_2) \in f_2$
+
+则$x_1 \in dom_{f_1} \land x_1 \in dom_{f_2}$与$A \cap C =\empty$相悖
+
+同理可证$y_1 \in D \land y_2 \in B$不成立
+
+所以$y_1 \in B \land y_2 \in B$或者$y_1 \in D \land y_2 \in D$成立
+
+如果$y_1 \in B \land y_2 \in B$成立，因为$f_1$是单射，所以$y_1 = y_2$
+
+同理对于$f_2$
+
+证明surjective
+
+假设存在$y \in ran_f \land \forall x \in dom_f, (x, y) \notin f$
+
+$y \in B \lor y \in D$
+
+如果$y \in B$
+
+$\exists x \in A, (x, y) \in f1, (x,y)\in f$
+
+同理可得$y\in D$情况
+
+原先假设不成立
+
+得证$f$是bijective，双射
+
+### 2.2.8
+
+证明h是function
+
+证明f1
+
+$x \in dom_h$
+
+$x \in dom_f \cup x \in dom_g$
+
+如果$x \in dom_f$，存在$y \in ran_f, (x, y)\in f, (x, y) \in f$
+
+同理$x\in dom_g$
+
+证明f2
+
+$(x, y1) \in h \land (x, y2) \in h$
+
+$x \in dom_h$
+
+$x \in B \lor x \in C$
+
+当$x \in B$时
+
+如果$(x, y1) \in f_1 \land (x, y2) \in f_1$，由$f_1$函数性质成立f2
+
+如果$(x, y1) \in f_1 \land (x, y2) \in f_2$
+
+则$x \in B \cap C$，因为$f_{B \cap C} = g_{B \cap C}，所以y1 = y2$
+
+同样成立f2
+
+同理可证$x \in C$的情况
+
+得证$h$是function
+
+$(x, y) \in f$
+
+$x \in B, (x, y) \in h_{[B]}$
+
+$f \subseteq h_{B}$
+
+$(x, y) \in h_{B}$
+
+1. $x \in B \land x \notin C$
+
+$(x, y) \in f$
+
+2. $x \in B \cap C$
+
+$(x, y) \in g \lor (x, y) \in f$
+
+根据$f_{[B \cap C]} = g_{[B \cap C]}$
+
+$(x, y) \in f$
+
+$h_{[B]} \subseteq f$
+
+得证$f = h_{[B]}$
+
+同理可证$g = h_{[C]}$
+
+### 2.2.9
+
+### 2.2.10
+
+假设$\exists G_1 \subseteq G, (x, y_1) \in G_1 \land (x, y_2) \in G_1 \land y_1 \not= y_2$
+
+因为$(x, y_1) \in G \land (x, y_2) \in G$，所以由G的functional graph特性，$y_1 = y_2$，与假设相悖
+
+### 2.2.11
+
+$(H \cap J) \circ G = (H \circ G)\cap (J \circ G)$
+
+证明$G is functional graph \Rightarrow expression$
+
+1. 证明$(H \cap J) \circ G \subseteq (H \circ G) \cap (J \circ G)$
+
+$(x, y) \in (H \cap J) \circ G$
+
+$\exists z, (x, z) \in G \land (z, y) \in H \cap J$
+
+$(z, y) \in H \land (z, y) \in J$
+
+$(x, z) \in G \land (z, y) \in H$
+
+$(x, y) \in H \circ G$
+
+同理 $(x, y) \in J \circ G$
+
+得证，并且由1的证明过程看出，1成立跟G的性质无关
+
+2. 证明$(H \cap J) \circ G \subseteq (H \circ G) \cap (J \circ G)$
+
+$(x, y) \in (H \circ G) \cap (J \circ G)$
+
+$(x, y) \in H \circ G$
+
+$\exists z_1, (x, z_1) \in G \land (z_1, y) \in H$
+
+同理 $\exists z_2, (x, z_2) \in G \land (z_2, y) \in J$
+
+由于G是functional graph
+
+$(x, z_1) \in G \land (x, z_2) \in G$
+
+所以$z_1 = z_2 = z$
+
+$(z, y) \in H \land (z, y) \in J$
+
+$(x, y) \in (H \cap J) \circ G$
+
+证明$expression \Rightarrow g\ is\ functional\ graph$
+
+### 2.2.12
+
+证明$g\ is\ injective \Rightarrow G \circ (H \cap J) = (G \circ H) \cap (G \circ J)$
+
+1.$G \circ (H \cap J) \subseteq (G \circ H) \cap (G \circ J)$自动成立
+
+2.$\;$
+
+**证明**
+
+$(x, y) \in (G \circ H) \cap (G \circ J)$
+
+$\exists z_1, (x, z_1) \in H, (z_1, y) \in G$
+
+$\exists z_2, (x, z_2) \in J, (z_2, y) \in G$
+
+因为G是单射，所以$(z_1, y) \in G \land (z_2, y) \in G \Rightarrow z_1 = z_2$
+
+$(x,z) \in H \land (x, z) \in J$
+
+$(x,y) \in G \circ (H \cap J)$
+
+**证明**
+
+由$(G \circ H) \cap (G \circ J) = G \circ (H \cap J)$推导出$G$是单射，其中G是functional graph，并且H和J是任意graph
+
+$(x, y) \in G \circ H \land (x, y) \in G \circ J$
+
+$\exists z_1, (x, z_1) \in H \land (z_1, y) \in G$
+
+$\exists z_2, (x, z_2) \in J \land (z_2, y) \in G$
+
+如果$z_1 = z_2$，则为满足任意H和J，G是单射
+
+如果$z_1 \not= z_2$
+
+$(x, y) \in G \circ (H \cap J)$
+
+$(x, z_0) \in (H \cap J)$
+
+如果H包含$(x, z0)$但是不包含$(x, z_2)$，上述不成立，矛盾
