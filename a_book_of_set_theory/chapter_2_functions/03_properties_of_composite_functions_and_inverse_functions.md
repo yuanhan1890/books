@@ -345,3 +345,22 @@ $h(g(x)) = h(g(y)) \Rightarrow f(x) = f(y)$
 
 **证明$右\Rightarrow 左$**
 
+$\forall x, y\in A, g(x) = g(y) \Rightarrow f(x) = f(y)$
+
+根据上述函数，针对$\forall z \in B$构造h函数
+
+1). 当$z\in B$，存在一个及以上的image $x_i \in A$，$h(z) = f(x_i)$，对于$f(x_i) = f(x_j) = ...$值都为$h(z)$
+
+2). 当$z\in B$，不存在image $x \in A$，使$z = g(x)$
+
+这种情况不存在，否则$h \circ g$不成立
+
+如果存在两个不同的$h_1,h_2$满足$f = h_1 \circ g, f = h_2 \circ g$满足
+
+那么$(h_1\circ g)(x) = (h_2\circ g)(x)$
+
+$h_1 = h_2$
+
+### 2.3.10
+
+
