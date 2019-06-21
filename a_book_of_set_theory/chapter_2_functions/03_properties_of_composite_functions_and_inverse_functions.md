@@ -240,3 +240,108 @@ $\forall y\in B, \exists z\in B, (z, y)\in g$
 c)
 
 结合a、b得证
+
+### 2.3.3
+
+$A= \{1, 2\}, B=\{2,3,4\}, C=\{4,5,6\}$
+
+$f:A\rightarrow B=\{(1,2), (2,3)\}$
+
+$g:B\rightarrow C=\{(2,4), (3,5), (4,6)\}$
+
+### 2.3.4
+
+$y = f(x)$
+
+$g(y) = g(f(x)) = x$
+
+$g\circ f = I_B$
+
+$x = g(y)$
+
+$f(x) = f(g(y)) = y$
+
+$f\circ g = I_A$
+
+### 2.3.5
+
+假设$g\not= f$
+
+$\exists x, g(x) \not=f(x)$
+
+我们可以构造一个函数f，使$\exists z, f(z) = x$
+
+则$(g\circ f)(z) \not= (f\circ g)(z)$，相悖
+
+### 2.3.6
+
+假设$g\not= f$
+
+$\exists x, g(x) \not= f(x)$
+
+可以构造一个函数f，使$\{(g(x), z_1), (h(x), z_2)\} \subseteq f$
+
+则相悖
+
+### 2.3.7
+
+证明正向
+
+$f\ is\ injective \land \forall g,h, f\circ g=f\circ h$
+
+$\forall x, f(g(x)) = f(h(x))$
+
+因为f是单射
+
+$\forall x, g(x) = h(x)$
+
+$g = h$
+
+得证$f\ is\ injective \Rightarrow (\forall g,h, f\circ g=f\circ h \Rightarrow g = h)$
+
+证明反向
+
+假设f不是单射，则构造一个g和h满足矛盾即可
+
+### 2.3.8
+
+证明正向
+
+$f\ is\ surjective \land (\forall g,h, g\circ f \land h\circ f)$
+
+$g(f(x)) = h(f(x))$
+
+因为f是满射，则对于g和h的domain皆有定义
+
+$\forall y \in ran_f, g(y) = h(y)$
+
+$g = h$
+
+证明反向
+
+$(\forall g,h, g\circ f = h\circ f) \Rightarrow g = h$
+
+如果f不是满射
+
+可以构造g和h，使得$(f(x), z) \in g \land f(x) \notin dom_h$
+
+相悖
+
+### 2.3.9
+
+证明命题
+
+$(\exists h:B\rightarrow C, f = h\circ g) \Leftrightarrow (\forall x, y\in A, g(x) = g(y) \Rightarrow f(x) = f(y))$
+
+其中$f:A\rightarrow C, g:A\rightarrow B$
+
+**证明$左\Rightarrow 右$**
+
+$g(x) = g(y), g(x) \in B, g(y) \in B$
+
+由h的函数性质
+
+$h(g(x)) = h(g(y)) \Rightarrow f(x) = f(y)$
+
+**证明$右\Rightarrow 左$**
+
