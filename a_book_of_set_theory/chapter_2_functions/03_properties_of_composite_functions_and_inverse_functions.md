@@ -363,4 +363,24 @@ $h_1 = h_2$
 
 ### 2.3.10
 
+$\exists h:C\rightarrow B, f=g\circ h\ iff\ ran_f\subseteq ran_g$
 
+证明$左\Rightarrow 右$
+
+$y \in ran_f, \exists x \in C, y =(g\circ h)(x)$
+
+$\exists z, (x, z) \in h, (z, y) \in g$
+
+$y \in ran_g$
+
+得证$ran_f \subseteq ran_g$
+
+证明$右\Rightarrow 左$
+
+构造$h:C\rightarrow B$
+
+对于任意在C中的元素x，得到$f(x)$，由于$g$是满射，所以一定存在元素$z$使$(z, f(x)) \in g$，则$h(x) = z$
+
+### 2.3.11
+
+没什么证明的
