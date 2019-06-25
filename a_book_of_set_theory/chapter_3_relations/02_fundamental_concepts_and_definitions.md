@@ -52,7 +52,7 @@ A relation is called an $equivalence\ relation$ if it is reflexive, symmetric, a
 
 A relation is called an $order\ relation$ if it is reflexive, antisymmetric, and transitive.
 
-A relation is called a $strict order relation$ if it is irreflexive, asymmetric, transitive 
+A relation is called a $strict\ order\ relation$ if it is irreflexive, asymmetric, transitive 
 
 ---
 
@@ -132,9 +132,13 @@ $(x, y) \in G\circ G\Rightarrow (x, y) \in G$
 
 equivalence relation $\Rightarrow$ the relation is transitive $\Rightarrow G\circ G\subseteq G$
 
-这里$G\circ G = G$应该是打印错误？
+只证明$G\subseteq G\circ G$
 
-因为$G\circ G\subseteq I_A \subseteq G$
+$(x,y)\in G$
+
+$(x, x)\in G$
+
+$(x, y)\in G\circ G$
 
 ### 3.2.4
 
@@ -155,4 +159,146 @@ $(x, y) \in G$
 $(y, y) \in H, (x, y) \in G$
 
 $(x, y) \in H\circ G$
+
+另一个易证
+
+### 3.2.7
+
+证明$左\Rightarrow 右$
+
+$(x, y) \in G \Rightarrow (x, y) \in H$
+
+$(x, y) \in G \circ H$
+
+$\exists z \in A, (x, z) \in H \land (z, y) \in G$
+
+$(z, y) \in H \land (x, z) \in H$
+
+H是transitive
+
+$(x, y) \in H$
+
+$G \circ H \subseteq H$
+
+假设$(x, y) \in H$
+
+$(y, y) \in G \land (x, y) \in H$
+
+$(x, y) \in G\circ H$
+
+$G\circ H = H$
+
+### 3.2.8
+
+即证明$G是order\ relation\Rightarrow G^{-1}是order\ relation$
+
+证明$G^{-1}$具有反身性，显而易见
+
+证明$G^{-1}$具有不对称性
+
+$(x, y) \in G^{-1} \land (x, y) \in G^{-1} \Rightarrow (y, x) \in G \land (x, y)\in G \Rightarrow x = y$
+
+证明$G^{-1}$具有传递性
+
+$(x, z) \in G^{-1} \land (z, y) \in G^{-1} \Rightarrow (z, x) \in G \land (y, z) \in G \Rightarrow (y, x) \in G \Rightarrow (x, y) \in G$
+
+### 3.2.9
+
+证明$左\Rightarrow 右$
+
+$(x, y) \in G\cap G^{-1}$
+
+$(x, y) \in G\land (y,x)\in G^{-1}$
+
+$(x, y) \in G \land (y, x)\in G$
+
+$x = y$
+
+$(x, y) \in G\circ G$
+
+$\exist z, (x, z) \in G \land )(z, y) \in G$
+
+$(x, y) \in G$
+
+$(x, x) \in G \land (x, y) \in G$
+
+$(x, y) \in G \circ G$
+
+### 3.2.10
+
+证明$左\Rightarrow 右$
+
+$(x, y)\in G\circ H$
+
+$\exists z_1 \in A, (x, z_1) \in H\land (z_1, y)\in G$
+
+$(y, x) \in G\circ H$
+
+$\exists z_2 \in A, (y, z_2) \in H\land (z_2, x)\in G$
+
+G和H都是对等关系
+
+$(z_1, x) \in H\land (y, z_1) \in G$
+
+$(z_2, y) \in H\land (x, z_2) \in G$
+
+$(y, x) \in H\circ G$
+
+得证$G\circ H\subseteq H\circ G$
+
+证明$H\circ G \subseteq G\circ H$
+
+$(x, y)\in H\circ G$
+
+$\exist z, (x, z)\in G \land (z, y) \in H$
+
+$(z, x) \in G \land (y, z) \in H$
+
+$(y, x) \in G\circ H$
+
+$(x, y) \in G\circ H$
+
+证明$右\Rightarrow 左$
+
+易证反身性和对称性
+
+$(x, y) \in G\circ H \land (y, z) \in G\circ H$
+
+$(x, y) \in H\circ G\land (y, z)\in H\circ G$
+
+从中得出$(x,z) \in G\circ H$即可证明传递性
+
+### 3.2.11
+
+$(x, y) \in G\circ H$
+
+$\exists z, (x, z)\in H \land (z, y) \in G$
+
+$(x, z) \in G\cup H\cap (z, y) \in G\cup H$
+
+$(x, y)\in G\cup H$
+
+证明$右\Rightarrow 左$
+
+易证$G\cup H$的反身性和对称性
+
+$(x, z) \in G\cup H\land (z, y)\in G\cup H$
+
+从四个情形都可以证明$(x, y) \in G\cup H$
+
+比如当$(x, z) \in G \land (z, y) \in G$时
+
+$(x, y) \in G \Rightarrow (x, y) \in G\cup H$
+
+当$(x, z) \in G\land (z, y) \in H$
+
+$(x, y)\in H\circ G \Rightarrow (x, y) \in G\cup H$
+
+### 3.2.12
+
+$(x, y) \in G$
+
+$(x, x) \in H \land (x, y) \in J$
+
+$(x, y) \in H\circ J$
 
