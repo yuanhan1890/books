@@ -84,7 +84,7 @@ $i) \overline{f}(\bigcup_{i\in I}C_i) = \bigcup_{i\in I}\overline{f}(C_i)$
 
 $ii) \breve{f}(\bigcup_{i\in I}C_i) = \bigcup_{i\in I}\breve{f}(C_i)$
 
-$i) \breve{f}(\bigcap_{i\in I}C_i) = \bigcap_{i\in I}\breve{f}(C_i)$
+$iii) \breve{f}(\bigcap_{i\in I}C_i) = \bigcap_{i\in I}\breve{f}(C_i)$
 
 证明1）
 
