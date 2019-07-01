@@ -87,9 +87,57 @@ $A{r\atop{\rightarrow\atop{surj}}}A/G{s\atop{\rightarrow\atop{bij}}}\overline{f}
 
 ---
 
-Example 3.24
+### Example 3.24
 
 if f is surjective, then $A/G\approx B$
 
 易证$\overline{f}(A) = B$
+
+---
+
+H是由f定义的对等关系
+
+$H: {(x, y): x\in A, y\in A, f(x) = f(y)}$
+
+G是定义在A上的对等关系，并且$G\ is\ finer\ than\ H,\ G\subseteq\ H$定义$f/G$
+
+则可以定义一个函数$f/G$
+
+$[f/G](G_x) = f(x)$
+
+$f/G$被称作为$quotient\ of\ f\ by\ G$
+
+---
+
+[theorem 3.26](#t_3_26)
+
+Let $f:A\rightarrow B$ be a function, let H be the equivalence relation determined by f, and let G be a refinement of H, Then $H/G$ is the equivalence relation determined by $f/G$
+
+$G\subseteq H$
+
+由$f/G$定义的对等关系是$J = \{(G_x, G_y): (f/G)(G_x) = (f/G)(G_y), (x, y) \in G, (x, y) \in H \}$
+
+显然这是$H/G$的定义
+
+---
+
+G,H都是A上的对等关系，并且$G\subseteq H$,则有
+
+$(A/G)/(H/G)\approx A/H$
+
+这个关系的解释为
+
+$A/G=\{G_x: x\in A\}$
+
+$H/G=\{(G_x, G_y): (x, y) \in H\}$
+
+f是canonical function, $f:A\rightarrow A/H$
+
+$f/G: A/G\rightarrow A/H$ is given by $[f/G](G_x) = f(x), \forall x \in A$
+
+$(A/H\rightarrow A/H)\circ(A/G\rightarrow A/H)$
+
+## exercise
+
+### 3.5.1
 
