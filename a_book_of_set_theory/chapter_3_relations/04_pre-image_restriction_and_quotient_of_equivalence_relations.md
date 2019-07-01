@@ -147,3 +147,136 @@ symmetric:
 同上
 
 ### 3.4.4
+
+$H=\breve{f}(G)\ and\ y=f(x) \Rightarrow H_x=\breve{f}(G_y)$
+
+定义
+
+$H=\breve{f}(G)=\{(x,y): (f(x), (f(y))) \in G\}$
+
+$z \in H_x \Rightarrow (z, x) \in H$
+
+$(f(z), f(x)) \in G$
+
+$(f(z), y) \in G$
+
+$z \in \breve{f}(G_y)$
+
+### 3.4.5
+
+易证三条性质
+
+### 3.4.6
+
+$B\subseteq A, \forall x \in B, (G_{[B]})_x = G_x \cap B$
+
+$z \in (G_{[B]})_x$
+
+$(z, x) \in G, z \in B$
+
+$z \in G_x$
+
+$(G_{[B]})_x \subseteq G_x \cap B$
+
+$z \in G_x \land z \in B$
+
+$(x, z) \in G, z \in B, x \in B$
+
+$(x, z) \in G_{[B]}$
+
+$z \in (G_{[B]})_x$
+
+### 3.4.7
+
+G,H,J是A中的对等关系,$G\subseteq H,\ H\subseteq J$,求证$H/G \subseteq J/G$
+
+$(G_x, G_y) \in H/G, (x, y)\in H$
+
+$(x, y) \in J$
+
+$\Rightarrow (G_x, G_y) \in J/G$
+
+### 3.4.8
+
+a)
+
+$(x, y) \in G$
+
+$(x, y) \in H \land (x, y) \in J$
+
+$(x, x) \in J \land (x, y) \in H$
+
+$(x, y) \in H \circ J$
+
+b)
+
+$H\circ J\ is\ an\ equivalence\ relation\ in\ A \Rightarrow (H/G)\circ (J/G) = (H\circ J)/G$
+
+$(G_x, G_y) \in (H/G)\circ(J/G)$
+
+$\exists G_z, (G_x, G_z) \in J/G \land (G_z, G_y)\in H/G$
+
+$(x, z) \in J, (z, y) \in H$
+
+$(x, y) \in H\circ J$
+
+$(G_x, G_y) \in (H\circ J)/G$
+
+c)
+
+$(H/G)\circ(J/G)\ is\ an\ equivalence\ relation\ in\ A/G$
+
+reflexive
+
+$\forall x \in A, (x, x) \in H, (x, x) \in J \Rightarrow$
+
+$(G_x, G_x) \in (H/G) \land (G_x, G_x) \in (J/G)$
+
+$\forall x \in A, (G_x, G_x) \in (H/G)\circ(J/G)$
+
+其余性质易证
+
+### 3.5.9
+
+$G_x{\sim\atop{H/G}}G_y \Leftrightarrow \exists z,G_x \in H_z, G_y \in H_z, G\subseteq H$
+
+如果$(G_x, G_y)\in H/G$，但是$G_x, G_y$不属于H中同一个equivalence class modulo，则由于传递性，可以证明出两个equivalence class modulo相等，产生悖论
+
+反之易证
+
+### 3.5.10
+
+$G\cdot H=\{[(x,w),(y,z)]: (x,y)\in G\ and\ (w,z)\in H\}$
+
+证明$G\cdot H$是$A\times B$上的对等关系
+
+reflexive
+
+$\forall x \in A, y \in B, (x, x) \in G, (y, y) \in H$
+
+$[(x, y), (x, y)] \in G\cdot H$
+
+symmetric
+
+其实也易证，利用pair相等性质
+
+### 3.5.11
+
+G是A上的对等关系，则$G\cdot G$是$A\times A$上的对等关系
+
+任意函数$f:A\rightarrow A\times A$
+
+$\breve{f}(G\times G) = \{(x, y): (f(x), f(y)) \in G\times G\}$存在
+
+### 3.6.12
+
+$\breve{f}(G) = f^{-1}\circ G\circ f$
+
+$(x, y) \in \breve{f}(G)$
+
+$(f(x), f(y)) \in G$
+
+$(x, f(x)) \in f \land (f(x), f(y)) \in G \land (f(y), y) \in f^{-1}$
+
+$(x, y) \in f^{-1}\circ G\circ f$
+
